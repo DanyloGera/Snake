@@ -89,6 +89,7 @@ p{
 .container {
   display: flex;
   justify-content: center;
+
 }
 .callout {
   position: fixed;
@@ -123,6 +124,6 @@ p{
   cursor: pointer;
 }
 
-.closebtn:hover {
+.closebtn1:hover {
   color: lightgrey;
 }
