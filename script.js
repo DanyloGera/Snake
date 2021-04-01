@@ -81,6 +81,10 @@ function drawGame() {
     snake.pop();
 
   }
+  if (score === 20) {
+    alert("You did it!");
+    document.location.href="https://danylogera.github.io/Snake/";
+  }
 
 //межі поля
   if(snakeX < box || snakeX > box * 17
