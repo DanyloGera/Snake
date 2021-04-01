@@ -82,8 +82,7 @@ function drawGame() {
 
   }
   if (score === 20) {
-    alert("You did it!");
-    document.location.href="https://danylogera.github.io/Snake/";
+    clearInterval(game, alert("You did it!"), document.location.href="https://danylogera.github.io/game-5/");
   }
 
 //межі поля
