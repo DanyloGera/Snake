@@ -102,7 +102,6 @@ p{
   font-size: 40px;
   color: white;
   text-align: center;
-  font-family: 'Rye', cursive;
 }
 
 .callout-container {
@@ -111,8 +110,7 @@ p{
   color: black;
   text-align: center;
   text-align: justify;
-  font-family: 'Rye', cursive;
-  font-size: 30px;
+  font-size: 26pt;
 }
 
 .closebtn1 {
