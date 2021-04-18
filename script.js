@@ -82,7 +82,7 @@ function drawGame() {
 
   }
   if (score === 20) {
-    clearInterval(game, alert("You did it!Your score: +"  + score), document.location.href="https://danylogera.github.io/game-5/");
+    clearInterval(game, alert("You did it!Your score: +"  + score), document.location.href="https://danylogera.github.io/game-3/");
   }
 
 //межі поля
