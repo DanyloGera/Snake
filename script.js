@@ -8,7 +8,12 @@ ground.src = "img/ground.png";
 //викликаєм картинку їжі
 const foodImg = new Image();
 foodImg.src = "img/cookie.png";
-
+//голова змійки
+const headImg = new Image();
+headImg.src = "img/head.png";
+//тулуб змійки
+const bodyImg = new Image();
+bodyImg.src = "img/body.png";
 //ячейка
 let box = 32;
 
@@ -59,8 +64,16 @@ function drawGame() {
   ctx.drawImage(foodImg, food.x, food.y);
 
   for(let i = 0; i < snake.length; i++) {
-    ctx.fillStyle = i == 0 ? "#00CED1" : "#00FFFF";
+    if (i == 0) {
+      var pattern = ctx.createPattern(headImg, 'repeat');
+   ctx.fillStyle = pattern;
+    } else {
+      var pattern1 = ctx.createPattern(bodyImg, 'repeat');
+      ctx.fillStyle = pattern1;
+    }
+
     ctx.fillRect(snake[i].x, snake[i].y, box, box);
+
   }
 
   ctx.fillStyle = "white";
