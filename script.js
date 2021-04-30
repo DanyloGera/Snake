@@ -12,6 +12,31 @@ foodImg.src = "img/cookie.png";
 const headImg = new Image();
 headImg.src = "img/head.png";
 //тулуб змійки
+// буква S
+const sImg = new Image();
+sImg.src = "img/s.png";
+// буква T
+const tImg = new Image();
+tImg.src = "img/t.png";
+// буква A
+const aImg = new Image();
+aImg.src = "img/a.png";
+// буква R
+const rImg = new Image();
+rImg.src = "img/r.png";
+// буква E
+const eImg = new Image();
+eImg.src = "img/e.png";
+// буква N
+const nImg = new Image();
+nImg.src = "img/n.png";
+// буква K
+const kImg = new Image();
+kImg.src = "img/k.png";
+// буква I
+const iImg = new Image();
+iImg.src = "img/i.png";
+
 const bodyImg = new Image();
 bodyImg.src = "img/body.png";
 //ячейка
@@ -64,12 +89,44 @@ function drawGame() {
   ctx.drawImage(foodImg, food.x, food.y);
 
   for(let i = 0; i < snake.length; i++) {
-    if (i == 0) {
+if (i == 0) {
       var pattern = ctx.createPattern(headImg, 'repeat');
-   ctx.fillStyle = pattern;
-    } else {
-      var pattern1 = ctx.createPattern(bodyImg, 'repeat');
+      ctx.fillStyle = pattern;
+    } else
+if (i == 7) {
+      var pattern1 = ctx.createPattern(sImg, 'repeat');
       ctx.fillStyle = pattern1;
+} else
+ if (i == 8) {
+     var pattern2 = ctx.createPattern(tImg, 'repeat');
+     ctx.fillStyle = pattern2;
+} else
+if (i == 9) {
+    var pattern3 = ctx.createPattern(aImg, 'repeat');
+    ctx.fillStyle = pattern3;
+} else
+if (i == 10) {
+    var pattern4 = ctx.createPattern(rImg, 'repeat');
+    ctx.fillStyle = pattern4;
+} else
+if (i == 11) {
+    var pattern5 = ctx.createPattern(eImg, 'repeat');
+    ctx.fillStyle = pattern5;
+} else
+if (i == 12) {
+    var pattern6 = ctx.createPattern(nImg, 'repeat');
+    ctx.fillStyle = pattern6;
+} else
+if (i == 13) {
+    var pattern7 = ctx.createPattern(kImg, 'repeat');
+    ctx.fillStyle = pattern7;
+} else
+if (i == 14) {
+    var pattern8 = ctx.createPattern(iImg, 'repeat');
+    ctx.fillStyle = pattern8;
+} else {
+      var pattern9 = ctx.createPattern(bodyImg, 'repeat');
+      ctx.fillStyle = pattern9;
     }
 
     ctx.fillRect(snake[i].x, snake[i].y, box, box);
@@ -95,7 +152,13 @@ function drawGame() {
 
   }
   if (score === 20) {
-    clearInterval(game, alert("You did it!Your score: +"  + score), document.location.href="https://danylogera.github.io/game-3/");
+    clearInterval(game,alert("Your score: " + score),pasword());
+function pasword() {
+  var btn = document.getElementById('form');
+  btn.removeAttribute("style");
+  btn.style.visibility = "visible";
+}
+
   }
 
 //межі поля
@@ -135,3 +198,25 @@ let game = setInterval(drawGame, 100);
        timer.value = m + " : " + s;
   }
   setInterval(timer1, 1000);
+//pasword
+  var truePasword1 = "STARENKI";
+  var truePasword2 = "Starenki";
+  function checkPassword()
+  {
+      if(document.getElementById("pasword-field").value == truePasword1)
+      {
+        alert('Correct! Your score: + ' + 20);
+        window.location.href="https://danylogera.github.io/game-3/";
+      }
+      else
+      if(document.getElementById("pasword-field").value == truePasword2)
+      {
+        alert('Correct! Your score: + ' + 20);
+        window.location.href="https://danylogera.github.io/game-3/";
+      }else
+      {
+        alert("Uncorrect!");
+        return false;
+
+      }
+  }
