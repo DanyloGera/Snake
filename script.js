@@ -151,7 +151,7 @@ if (i == 14) {
     snake.pop();
 
   }
-  if (score === 20) {
+  if (score === 1) {
     clearInterval(game,alert("Your score: " + score),pasword());
 function pasword() {
   var btn = document.getElementById('form');
@@ -215,7 +215,7 @@ let game = setInterval(drawGame, 100);
         window.location.href="https://danylogera.github.io/game-3/";
       }else
       {
-        alert("Uncorrect!");
+        alert("Uncorrect!If you want to play again close the article '×'");
         return false;
 
       }
