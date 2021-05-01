@@ -151,7 +151,7 @@ if (i == 14) {
     snake.pop();
 
   }
-  if (score === 1) {
+  if (score === 20) {
     clearInterval(game,alert("Your score: " + score),pasword());
 function pasword() {
   var btn = document.getElementById('form');
