@@ -6,7 +6,7 @@ canvas {
   justify-content: center;
   align-items: center;
   display: block;
-
+margin-top: 25%;
 }
 .row1{
   display: flex;
