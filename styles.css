@@ -5,61 +5,33 @@ canvas {
   display: block;
   margin: 0 auto;
 }
-.row1{
-  display: flex;
-justify-content: flex-start;
-
-}
-.row1-wrap{
-  position: absolute;
-    height: 95%;
-  width: 20%;
-}
-@media (min-height: 800px) {
-  .btn-next, .btn-back {
-    max-height: 80%;
-  }
-}
 /*  */
 .btn-back {
+  position: absolute;
+  top: 50px;
   background-color: #FEC75E;
-      padding: 20px;
-      border: 2px solid #000;
-      border-radius: 10px;
-      font-family: 'DotGothic16', sans-serif;
-      font-size: 10pt;
-      max-width: 90%;
-      height: 100%;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 15px;
 }
 .btn-back-wrapper {
   display: flex;
-  justify-content: center;
-  height: 12%;
-  width: 100%;
-  position: absolute;
-  top: 1%
+  justify-content: flex-start;
 }
-//* time */
+/* time */
 .timer-wrapper {
   position: absolute;
-top: 90%;
-display: flex;
-justify-content: center;
-
-width: 100%;
-position: absolute;
+top: 500px;
 }
-
 .timer {
+  width: 150px;
   background-color: #FEC75E;
-      padding: 20px;
-      border: 2px solid #000;
-      border-radius: 10px;
-      font-family: 'DotGothic16', sans-serif;
-      font-size: 10pt;
-      max-width: 90%;
-      height: 100%;
-      text-align: center;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+    text-align: center;
 }
 
 .alert {
