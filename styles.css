@@ -100,12 +100,13 @@ p{
   /* visibility: visible; */
   display: flex;
   justify-content: center;
-  z-index: 5
+
 
 }
 .callout {
   position: fixed;
     width: 50%;
+      z-index: 5;
 }
 
 .callout-header {
