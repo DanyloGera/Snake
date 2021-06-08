@@ -2,11 +2,9 @@ html {
 background-image: linear-gradient(to left bottom, #8fcbca, #88c3c9, #83bac7, #80b2c3, #7ea9bf, #7ba9bf, #77aabe, #74aabd, #70b3bd, #73bbb9, #7dc3b1, #8ec9a8);
  }
 canvas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: block;
-margin-top: 25%;
+  margin: 0 auto;
+
 }
 .row1{
   display: flex;
