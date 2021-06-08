@@ -144,6 +144,7 @@ p{
   position: fixed;
     width: 50%;
     top: 25%;
+    z-index: 10;
 }
 .form-callout-container {
   padding: 20px 50px 55px 50px;
