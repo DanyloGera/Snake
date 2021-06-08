@@ -74,6 +74,7 @@ position: absolute;
       background-color: #eee;
       color: #000;
       border: 3px dashed #4F7072;
+      z-index: 8;
 }
 
 .closebtn {
