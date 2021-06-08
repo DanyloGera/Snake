@@ -56,6 +56,11 @@ position: absolute;
       text-align: center;
 }
 
+.canvas-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .alert {
   position: absolute;
     top: 30%;
