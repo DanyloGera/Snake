@@ -165,7 +165,7 @@ function pasword() {
   if (snake.x < 0) { snake.x = canvas.width - box; } else if (snake.x >= canvas.width) { snake.x = 0; }
    // Делаем то же самое для движения по вертикали
    if (snake.y < 0) { snake.y = canvas.height - box; } else if (snake.y >= canvas.height) { snake.y = 0; }
-  snake.unshift({ x: snake.x, y: snake.y });
+  snake.unshift(newHead);
 
 
 
