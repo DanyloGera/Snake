@@ -162,10 +162,10 @@ function pasword() {
   }
 
 //межі поля
-  if (snake.x < 0) { snake.x = canvas.width - box; } else if (snake.x >= canvas.width) { snake.x = 0; }
-   // Делаем то же самое для движения по вертикали
-   if (snake.y < 0) { snake.y = canvas.height - box; } else if (snake.y >= canvas.height) { snake.y = 0; }
-  snake.unshift(newHead);
+  if(snakeX < box || snakeX > box * 17
+    || snakeY < 3 * box || snakeY > box * 17)
+
+    clearInterval(game, alert("Your score: " + score), window.location.reload());
 
 
 
